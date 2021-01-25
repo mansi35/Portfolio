@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mansi Sharma</title>
-    <!-- JS -->
-    <script src="js/app.js"></script>
 
     <!-- Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,700' rel='stylesheet' type='text/css'>
@@ -39,28 +37,28 @@
 				<img src="img/android-chrome-512x512.png" style="height: 4.45em;" alt="logo">
 			</label>
 			<ul>
-				<li><a class="active" href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Experience</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Courses</a></li>
+				<li><a class="active" id="home-btn" href="#">Home</a></li>
+				<li><a href="#" id="about-btn">About</a></li>
+				<li><a href="#" id="exp-btn">Experience</a></li>
+				<li><a href="#" id="project-btn">Projects</a></li>
+				<li><a href="#" id="certi-btn">Certifications</a></li>
 			</ul>
 		</nav>
 	</header>
-	<!-- Content -->
-	<div class="content">
+	<!-- Home Page -->
+	<div class="content" id="home-container">
 		<div class="container-fluid">
 			<div class="bottom">
 				<img src="resuorces/land.svg" style="width: 100%; opacity: 0.6;"/>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 col-xs-12">
 					<div class="header-inner">
 						<h1><strong>I'm Mansi Sharma</strong></h1>
 						<h3>A passionate learner and explorer!</h3>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-xs-12">
 					<div class="skills">
 						<span style="font-size: 4vw; line-height: 2em; color: rgb(106, 15, 192);">Web Development</span><br>
 						<span style="font-size: 5.5vw; line-height: 0.5em; color: rgb(100, 61, 10);">Python</span>
@@ -75,5 +73,40 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- About Page -->
+	<div class="row d-md-none containers" id="about-container">
+		<div class="col-md-12 my-auto">
+			<section id="about-section">
+			</section>
+		</div>
+	</div>
+
+	<!-- Experience Page -->
+	<div class="row d-md-none containers" id="exp-container">
+		<div class="col-md-12 my-auto">
+			<section id="experience-section">
+			</section>
+		</div>
+	</div>
+
+	<!-- Projects Page -->
+	<div class="row d-md-none containers" id="project-container">
+		<div class="col-md-12 my-auto">
+			<section id="project-section">
+			</section>
+		</div>
+	</div>
+
+	<!-- Certifications Page -->
+	<div class="row d-md-none containers" id="certi-container">
+		<div class="col-md-12 my-auto">
+			<section id="certi-section">
+			</section>
+		</div>
+	</div>
+
+	<!-- JS -->
+    <script src="js/app.js"></script>
 </body>
 </html>
