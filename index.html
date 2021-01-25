@@ -21,7 +21,17 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/jquery.parallax.css">
+	<link rel="stylesheet" href="css/jquery.parallax.css">
+	
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".uncheck").click(function(){
+				$("#check").prop("checked", false);
+			});
+		});
+	</script>
 	
     <!-- The favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -37,11 +47,11 @@
 				<img src="img/android-chrome-512x512.png" style="height: 4.45em;" alt="logo">
 			</label>
 			<ul>
-				<li><a class="active" id="home-btn" href="#">Home</a></li>
-				<li><a href="#" id="about-btn">About</a></li>
-				<li><a href="#" id="exp-btn">Experience</a></li>
-				<li><a href="#" id="project-btn">Projects</a></li>
-				<li><a href="#" id="certi-btn">Certifications</a></li>
+				<li><a class="active uncheck" id="home-btn" href="#">Home</a></li>
+				<li><a href="#" class="uncheck" id="about-btn">About</a></li>
+				<li><a href="#" class="uncheck" id="exp-btn">Experience</a></li>
+				<li><a href="#" class="uncheck" id="project-btn">Projects</a></li>
+				<li><a href="#" class="uncheck" id="certi-btn">Certifications</a></li>
 			</ul>
 		</nav>
 	</header>

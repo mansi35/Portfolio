@@ -17,11 +17,11 @@ projectBtn.addEventListener("click", displayProject);
 certiBtn.addEventListener("click", displayCerti);
 
 function hideAll() {
-    homeSec.classList.add("d-md-none");
-    aboutSec.classList.add("d-md-none");
-    expSec.classList.add("d-md-none");
-    projectSec.classList.add("d-md-none");
-    certiSec.classList.add("d-md-none");
+    homeSec.classList.add("d-none");
+    aboutSec.classList.add("d-none");
+    expSec.classList.add("d-none");
+    projectSec.classList.add("d-none");
+    certiSec.classList.add("d-none");
 
     homeBtn.classList.remove("active");
     aboutBtn.classList.remove("active");
@@ -32,30 +32,30 @@ function hideAll() {
 
 function displayHome() {
     hideAll();
-    homeSec.classList.remove("d-md-none");
+    homeSec.classList.remove("d-none");
     homeBtn.classList.add("active");
 }
 
 function displayAbout() {
     hideAll();
-    aboutSec.classList.remove("d-md-none");
+    aboutSec.classList.remove("d-none");
     aboutBtn.classList.add("active");
 }
 
 function displayExp() {
     hideAll();
-    expSec.classList.remove("d-md-none");
+    expSec.classList.remove("d-none");
     expBtn.classList.add("active");
 }
 
 function displayProject() {
     hideAll();
-    projectSec.classList.remove("d-md-none");
+    projectSec.classList.remove("d-none");
     projectBtn.classList.add("active");
 }
 
 function displayCerti() {
     hideAll();
-    certiSec.classList.remove("d-md-none");
+    certiSec.classList.remove("d-none");
     certiBtn.classList.add("active");
 }
