@@ -1,0 +1,72 @@
+body {
+	font-family: 'BadScript-Regular', 'karla', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+    color: #000;
+	background: #7de0e6;
+    margin: 0 0;
+}
+
+@font-face {
+    font-family: 'BadScript-Regular';
+    src: url('../resuorces/BadScript-Regular.ttf') format("opentype");
+}
+
+@font-face {
+    font-family: 'YuseiMagic-Regular';
+    src: url('../resuorces/YuseiMagic-Regular.ttf') format("opentype");
+}
+
+.bottom {
+    position: fixed;
+    width: 98%;
+    bottom: 0;
+}
+
+span {
+	font-family: 'YuseiMagic-Regular';
+	position: relative;
+}
+
+@media screen and (min-width: 601px) {
+    h1 {
+      font-size: 56px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .header-inner {
+        margin-left: 6vw;
+        margin-top: 12vw;
+	}
+	
+	.skills {
+		text-align: center;
+		margin-right: 0;
+		margin-top: 8vw;
+	}
+}
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h1 {
+      font-size: 44px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .header-inner {
+        margin-left: 6vw;
+        margin-top: 28vw;
+	}
+	
+	.skills {
+		text-align: center;
+		margin-top: 28vw;
+	}
+}
