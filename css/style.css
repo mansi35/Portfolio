@@ -122,6 +122,10 @@ span {
 
 
 @media screen and (min-width: 601px) {
+	span {
+		filter: brightness(150%);
+	}
+	
     h1 {
       font-size: 56px;
     }
