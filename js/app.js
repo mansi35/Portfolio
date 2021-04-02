@@ -9,12 +9,15 @@ const aboutBtn = document.getElementById("about-btn");
 const expBtn = document.getElementById("exp-btn");
 const projectBtn = document.getElementById("project-btn");
 const certiBtn = document.getElementById("certi-btn");
+const check = document.getElementById("check");
+const skills = document.getElementById("skills");
 
 homeBtn.addEventListener("click", displayHome);
 aboutBtn.addEventListener("click", displayAbout);
 expBtn.addEventListener("click", displayExp);
 projectBtn.addEventListener("click", displayProject);
 certiBtn.addEventListener("click", displayCerti);
+check.addEventListener("click", hideSkills);
 
 function hideAll() {
     homeSec.classList.add("d-none");
@@ -58,4 +61,13 @@ function displayCerti() {
     hideAll();
     certiSec.classList.remove("d-none");
     certiBtn.classList.add("active");
+}
+
+function hideSkills() {
+    if (skills.classList.contains("d-none")) {
+        skills.classList.remove("d-none");
+    }
+    else {
+        skills.classList.add("d-none");
+    }
 }

@@ -1,5 +1,5 @@
 body {
-	font-family: 'BadScript-Regular', 'karla', Helvetica, Arial, sans-serif;
+	font-family: 'Bad Script', 'karla', Helvetica, Arial, sans-serif;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30px;
@@ -13,16 +13,6 @@ body {
 	list-style: none;
 }
 
-@font-face {
-    font-family: 'BadScript-Regular';
-    src: url('../resuorces/BadScript-Regular.ttf') format("opentype");
-}
-
-@font-face {
-    font-family: 'YuseiMagic-Regular';
-    src: url('../resuorces/YuseiMagic-Regular.ttf') format("opentype");
-}
-
 /* Landing Page */
 .bottom {
     position: fixed;
@@ -30,12 +20,12 @@ body {
     bottom: 0;
 }
 
-span {
-	font-family: 'YuseiMagic-Regular';
+.floating-text {
+	font-family: 'Yusei Magic';
 }
 
 @media screen and (min-width: 601px) {
-	span {
+	.floating-text {
 		filter: brightness(150%);
 	}
 
@@ -52,10 +42,10 @@ span {
         margin-top: 12vw;
 	}
 	
-	.skills {
+	#skills {
 		text-align: center;
 		margin-right: 0;
-		margin-top: 8vw;
+		margin-top: 12vw;
 	}
 }
   
@@ -73,15 +63,15 @@ span {
         margin-top: 28vw;
 	}
 	
-	.skills {
+	#skills {
 		text-align: center;
-		margin-top: 28vw;
+		margin-top: 18vw;
 	}
 }
 
 /* Navigation bar */
 nav {
-	font-family: 'YuseiMagic-Regular';
+	font-family: 'Yusei Magic';
 	background: #4DBDAA;
 	height: 80px;
 	width: 100%;
@@ -165,3 +155,35 @@ a.active, a:hover {
 		left: 0;
 	}
 }
+
+.floating-text{
+	display: inline-block;
+	transform: translateY(0);
+	animation: fl1 3s infinite linear;
+  }
+  
+  .floating-text::before{
+	content: attr(data-text);
+	position: absolute;
+	clip-path: polygon(0 0,100% 0,100% 50%,0 50%);
+	animation: fl2 3s infinite linear;
+  }
+  
+  @keyframes fl1 {
+	30%{
+	  transform: translateY(10%) rotate(4deg);
+	}
+	70%{
+	  transform: translateY(10%) rotate(-4deg);
+	}
+  }
+  
+  @keyframes fl2 {
+	30%{
+	clip-path: polygon(0 0,100% 0,100% 24%,0 56%);
+	}
+	70%{
+	clip-path: polygon(0 0,100% 0,100% 56%,0 24%);
+	}
+  }
+  
